@@ -1,0 +1,8 @@
+<% @boards.each do |board| %>
+    <!--<h1><%= board.title %></h1>-->
+    <!--<%= link_to '글 보기', "/show/#{board.id}" %>-->
+    
+    <h1><%= link_to "#{board.title}", "/show/#{board.id}" %></h1>
+    
+    <%= link_to '글 삭제', "/destroy/#{board.id}" %>
+<% end %>
